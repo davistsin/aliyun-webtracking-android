@@ -1,0 +1,3 @@
+rootProject.name = "AliyunWebTracking"
+include ':app'
+include ':webtracking'
