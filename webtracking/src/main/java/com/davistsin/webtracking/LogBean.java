@@ -1,4 +1,4 @@
-package wiki.qdc.webtracking;
+package com.davistsin.webtracking;
 
 class LogBean {
 

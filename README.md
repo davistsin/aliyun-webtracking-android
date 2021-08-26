@@ -53,5 +53,5 @@ Logger.log("TAG", "上报一个错误");
 #### 设置应用信息
 
 ```java
-Logger.setAppInfo("appName", BuildConfig.VERSION_NAME, String.valueOf(BuildConfig.VERSION_CODE));
+Logger.setAppInfo("appName", BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE);
 ```

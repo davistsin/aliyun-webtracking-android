@@ -5,11 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.davistsin.webtracking.Logger;
+import com.davistsin.webtracking.LoggerConfig;
+
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import wiki.qdc.webtracking.Logger;
-import wiki.qdc.webtracking.LoggerConfig;
 
 public class MainActivity extends AppCompatActivity {
 

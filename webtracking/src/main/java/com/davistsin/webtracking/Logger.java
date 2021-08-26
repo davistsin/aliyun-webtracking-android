@@ -1,7 +1,8 @@
-package wiki.qdc.webtracking;
+package com.davistsin.webtracking;
 
 import static android.provider.Settings.Secure.getString;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -125,11 +126,11 @@ public final class Logger {
      * @param appVersionName
      * @param appVersionCode
      */
-    public static void setAppInfo(String appName, String appVersionName, String appVersionCode) {
+    public static void setAppInfo(String appName, String appVersionName, int appVersionCode) {
         mAppInfo = new LogBean.AppInfo();
         mAppInfo.setAppName(appName);
         mAppInfo.setAppVersion(appVersionName);
-        mAppInfo.setVersionCode(appVersionCode);
+        mAppInfo.setVersionCode(String.valueOf(appVersionCode));
     }
 
     /**

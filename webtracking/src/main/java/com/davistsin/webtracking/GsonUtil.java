@@ -1,4 +1,4 @@
-package wiki.qdc.webtracking;
+package com.davistsin.webtracking;
 
 import com.google.gson.Gson;
 

@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
 def safeExtGet(prop, fallback) {
@@ -30,4 +31,28 @@ android {
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation 'com.google.code.gson:gson:2.8.8'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                // The following applies a component to this publication
+                // which results in publishing an app bundle.
+                from components.release
+
+                groupId = 'com.github.davistsin'
+                artifactId = 'aliyun-webtracking-android'
+                version = '1.0.0'
+            }
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
+
+                groupId = 'com.github.davistsin'
+                artifactId = 'aliyun-webtracking-android-debug'
+                version = '1.0.0'
+            }
+        }
+    }
 }
