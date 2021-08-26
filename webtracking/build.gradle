@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.library'
-    id 'com.github.panpf.bintray-publish'
 }
 
 def safeExtGet(prop, fallback) {
@@ -29,16 +28,6 @@ android {
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:3.12.1")
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
-
-publish {
-    userOrg = 'qindachang'
-    groupId = 'davis.tsin'
-    artifactId = 'aliyun-webtracking'
-    publishVersion = '1.0.0'
-    desc = 'The Android library of Aliyun WebTracking log'
-    website = 'https://github.com/heytea/aliyun-webtracking-android'
-}
-
-// ./gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false

@@ -13,7 +13,7 @@ final class SpUtil {
     private SpUtil() {
     }
 
-    public static void addSet(Context context, String key, String value) {
+    public static void putStringSet(Context context, String key, String value) {
         SharedPreferences sp = context.getSharedPreferences("webtracking", MODE_PRIVATE);
         Set<String> originSet = sp.getStringSet(key, null);
         Set<String> saveSet = new HashSet<>();
@@ -26,7 +26,7 @@ final class SpUtil {
         editor.apply();
     }
 
-    public static Set<String> getSet(Context context, String key) {
+    public static Set<String> getStringSet(Context context, String key) {
         SharedPreferences sp = context.getSharedPreferences("webtracking", MODE_PRIVATE);
         return sp.getStringSet(key, null);
     }
