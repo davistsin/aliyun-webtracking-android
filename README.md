@@ -16,7 +16,7 @@ allprojects {
 Add the dependency
 
 ```
-implementation 'com.github.davistsin:aliyun-webtracking-android:1.0.0'
+implementation 'com.github.davistsin:aliyun-webtracking-android:v1.0.0'
 ```
 
 
