@@ -1,5 +1,7 @@
 # aliyun-webtracking-android
 
+[![](https://jitpack.io/v/davistsin/aliyun-webtracking-android.svg)](https://jitpack.io/#davistsin/aliyun-webtracking-android)
+
 ## 安装
 
 Add it in your root build.gradle at the end of repositories:
@@ -16,7 +18,7 @@ allprojects {
 Add the dependency
 
 ```
-implementation 'com.github.davistsin:aliyun-webtracking-android:1.0.0'
+implementation 'com.github.davistsin:aliyun-webtracking-android:v1.0.0'
 ```
 
 
