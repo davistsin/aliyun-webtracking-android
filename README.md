@@ -1,6 +1,6 @@
 # aliyun-webtracking-android
 
-[![](https://jitpack.io/v/davistsin/aliyun-webtracking-android.svg)](https://jitpack.io/#davistsin/aliyun-webtracking-android)
+[![](https://jitpack.io/v/davistsin/aliyun-webtracking-android.svg)](https://jitpack.io/#davistsin/aliyun-webtracking-android)  ![license](https://img.shields.io/github/license/davistsin/aliyun-webtracking-android)
 
 ## 安装
 
@@ -18,7 +18,7 @@ allprojects {
 Add the dependency
 
 ```
-implementation 'com.github.davistsin:aliyun-webtracking-android:v1.0.1'
+implementation 'com.github.davistsin:aliyun-webtracking-android:{last version}'
 ```
 
 
